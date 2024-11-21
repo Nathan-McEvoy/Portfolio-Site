@@ -46,10 +46,15 @@ nav a {
 
 /* Classes */
 .page_card {
-    display: flex;
     background-color: #181818;
-    padding: 4%;
+    border: 2px solid #F2A71B;
+    border-radius: 4%;
+    padding: 2%;
     margin: 2% 0%;
+}
+
+.page_card_section {
+    display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
@@ -59,6 +64,17 @@ nav a {
 }
 
 .card_img {
+    width: 30%;
+}
+
+.hr {
+    margin: 2% 0;
+    border-color: #F2A71B;
+}
+
+
+
+/* ID's */
+#profile_img {
     width: 20%;
-    display: inline-block;
 }
