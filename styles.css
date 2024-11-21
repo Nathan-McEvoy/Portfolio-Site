@@ -22,6 +22,7 @@ main {
 
 h1, h2 {
     text-align: center;
+    width: 100%;
 }
 
 nav {
@@ -50,6 +51,7 @@ nav a {
     padding: 4%;
     margin: 2% 0%;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .card_content_wrapper {
