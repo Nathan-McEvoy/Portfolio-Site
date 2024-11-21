@@ -72,7 +72,13 @@ nav a {
     border-color: #F2A71B;
 }
 
+.portfolio_imgs_wrapper {
+    display: flex;
+}
 
+.portfolio_imgs_wrapper img {
+    width: 70%;
+}
 
 /* ID's */
 #profile_img {
