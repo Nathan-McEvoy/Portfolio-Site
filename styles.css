@@ -1,17 +1,26 @@
-/*
-Theme Colours
-Text Gold #F2A71B
-BG Light #262626
-BG Dark #181818
-*/
-/* Elements */
+/* *** Theme Colours *** */
+:root {
+    --gold: #F2A71B;
+    --lightgrey: #262626;
+    --darkgrey: #181818;
+    --isFocused: #0FFF45;
+    --isFocusedBG: #575757;
+}
+
+/* *** Focus Highlight *** */
+*:focus {
+    outline: dashed var(--isFocused);
+    border: none;
+}
+
+/* *** Elements *** */
 * {
     font-family: Arial, Helvetica, sans-serif;
-    color: #F2A71B;
+    color: var(--gold);
 }
 
 body {
-    background: repeating-linear-gradient(45deg, #181818 1px, #262626 9px)
+    background: repeating-linear-gradient(45deg, var(--darkgrey) 1px, var(--lightgrey) 9px)
     
 }
 
@@ -30,7 +39,7 @@ nav {
     top: 0;
     display: flex;
     padding-right: 10%;
-    background-color: #181818;
+    background-color: var(--darkgrey);
     justify-content: flex-end;
     align-items: center;
     column-gap: 20px;
@@ -42,12 +51,42 @@ nav a {
     font-size: 1.5em;
 }
 
+/* * Buttons * */
+button {
+    width: 100%;
+    font-size: 1.5em;
+    background-color: var(--darkgrey);
+    border: 1px solid var(--gold);
+}
+/* Standard Button Hover */
+button:hover {
+    color: var(--darkgrey);
+    background-color: var(--gold);
+    border-color: var(--darkgrey);
+}
+
+/* Focused Button */
+button:active:focus {
+    color: var(--isFocused);
+    background-color: var(--isFocusedBG);
+    outline: dashed var(--isFocused);
+}
 
 
-/* Classes */
+/* *** Classes *** */
+/* ** General ** */
+.nav_buttons_wrapper {
+    width: 20%;
+    display: flex;
+}
+
+.nav_buttons_wrapper button {
+    margin-left: 10px;
+}
+
 .page_card {
-    background-color: #181818;
-    border: 2px solid #F2A71B;
+    background-color: var(--darkgrey);
+    border: 2px solid var(--gold);
     border-radius: 4%;
     padding: 2%;
     margin: 2% 0%;
@@ -69,9 +108,10 @@ nav a {
 
 .hr {
     margin: 2% 0;
-    border-color: #F2A71B;
+    border-color: var(--gold);
 }
 
+/* ** Index Portfolio Section ** */
 .portfolio_cards_wrapper {
     display: flex;
     flex-wrap: nowrap;
@@ -84,7 +124,7 @@ nav a {
     justify-content: space-around;
 }
 
-.portfolio_card * {
+.portfolio_card img {
     margin: 0 auto;
 }
 
@@ -92,7 +132,17 @@ nav a {
     width: 60%;
 }
 
-/* ID's */
+/* * Index Portfolio Buttons * */
+.portfolio_card_buttons_wrapper {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+}
+
+
+
+/* *** ID's *** */
+/* ** Index ID's ** */
 #profile_img {
     width: 20%;
 }
