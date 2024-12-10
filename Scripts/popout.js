@@ -14,12 +14,14 @@ for (let i = 0; i < expandBtnNodeList.length; i++) {
             popoutProjectsNodeList[i].classList.remove("active");
             activePopout.style.display = "none";
             darkOverlay.style.display = "none";
+            expandBtnNodeList[i].focus();
         }
         else
         {
             popoutProjectsNodeList[i].classList.add("active");
             activePopout.style.display = "inline";
             darkOverlay.style.display = "inline";
+            closeBtnNodeList[i].focus();
         }
         
     });
