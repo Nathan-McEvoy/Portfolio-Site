@@ -72,12 +72,24 @@ nav a {
     border-color: #F2A71B;
 }
 
-.portfolio_imgs_wrapper {
+.portfolio_cards_wrapper {
     display: flex;
+    flex-wrap: nowrap;
 }
 
-.portfolio_imgs_wrapper img {
-    width: 70%;
+.portfolio_card {
+    width: 60%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+}
+
+.portfolio_card * {
+    margin: 0 auto;
+}
+
+.portfolio_card img {
+    width: 60%;
 }
 
 /* ID's */
