@@ -145,6 +145,31 @@ button:active:focus {
     margin: 0 auto;
 }
 
+/* ** Popout Window Section ** */
+.popout_dark_bg {
+    display: none;
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+}
+
+.popout_wrapper {
+    display: none;
+    position: fixed;
+    top: 3%;
+    left: 30%;
+    opacity: 1;
+}
+
+.close_popout {
+    width: 10%;
+    position: absolute;
+    right: 0;
+}
 
 
 /* *** ID's *** */

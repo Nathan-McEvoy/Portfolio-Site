@@ -110,8 +110,33 @@
                     <h2>Portfolio</h2>
                     <div class="portfolio_cards_wrapper">
 
-                        <div class="portfolio_card">
-                            <img src="Images/placeholder-image.webp" alt="Image of the first portfolio project">
+                        <!-- HIDDEN POPOUT WINDOWS -->
+                         <div class="popout_dark_bg" id="popout_dark_bg"></div>
+                        <div class="popout_wrapper" id="popout_project_1">
+                            <button type="button" class="close_popout" id="c_p_1" title="Close Popout">&#9747</button>
+                            <iframe class="portfolio_popout" id="Project_1_Popout" title="Project 1 - MakinTrax" width="800" height="800"
+                                src="project_1_MakinTrax.html">
+                            </iframe>
+                        </div>
+                       
+                        <div class="popout_wrapper" id="popout_project_2">
+                            <button type="button" class="close_popout" id="c_p_2" title="Close Popout">&#9747</button>
+                            <iframe class="portfolio_popout" id="Project_2_Popout" title="Project 2 - MakinTrax" width="800" height="800"
+                                src="project_2.html">
+                            </iframe>
+                        </div>
+                        
+                        <div class="popout_wrapper" id="popout_project_3">
+                            <button type="button" class="close_popout" id="c_p_3" title="Close Popout">&#9747</button>
+                            <iframe class="portfolio_popout" id="Project_3_Popout" title="Project 3 - MakinTrax" width="800" height="800"
+                            src="project_3.html">
+                        </iframe>
+                    </div>
+
+                    
+                    <!-- Portfolio Cards -->
+                    <div class="portfolio_card">
+                        <img src="Images/placeholder-image.webp" alt="Image of the first portfolio project">
                             <div class="portfolio_card_buttons_wrapper">
                                 <button type="button" class="expand index_portfolio_button" id="home_portfolio_expand_1" title="Expand 1st Portfolio Card">&#9857 Expand</button>
                                 <button type="button" class="goto index_portfolio_button" id="home_portfolio_goto_1" title="Goto">&#10140 Goto</button>
@@ -139,11 +164,14 @@
                 </div>
             </div>
             
+            
+            
         </main>
 
         
 
         <!--Footer-->
         <!--Scripts-->
+        <script src="Scripts/popout.js"></script>
     </body>
 </html>
