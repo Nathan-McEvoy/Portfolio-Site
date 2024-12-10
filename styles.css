@@ -132,6 +132,10 @@ button:active:focus {
     width: 60%;
 }
 
+.portfolio_card h3 {
+    text-align: center;
+}
+
 /* * Index Portfolio Buttons * */
 .portfolio_card_buttons_wrapper {
     width: 60%;
@@ -163,12 +167,20 @@ button:active:focus {
     top: 3%;
     left: 30%;
     opacity: 1;
+    width: 47%;
 }
 
 .close_popout {
     width: 10%;
     position: absolute;
-    right: 0;
+    right: 10%;
+}
+
+.popout_portfolio_button {
+    width: 20%;
+    position: absolute;
+    bottom: .5%;
+    right: 10%;
 }
 
 

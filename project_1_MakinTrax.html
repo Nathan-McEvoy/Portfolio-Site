@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="description"
         content="Nathan's first project, a website he assisted his father in making.">
-    <title>Project 1, MakingTrax</title>
+    <title>Project 1, MakinTrax</title>
     <!--Favicon-->
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -17,8 +17,8 @@
     <!--Floating Sticky Nav Bar-->
     <nav>
         <div class="nav_buttons_wrapper">
-            <button title="Go To Home">Home</button>
-            <button title="Go To Projects">Projects</button>
+            <button title="Go To Home" onclick="location.href='index.html'">Home</button>
+            <button title="Go To Projects" onclick="location.href='projects.html'">Projects</button>
         </div>
     </nav>
 
@@ -26,15 +26,24 @@
         <!--Picture or Screenshot of Project-->
         <div class="page_card">
             <div class="page_card_section project_section">
-                <img class="project_img" src="Images/placeholder-image.webp" alt="Screenshot of the MakinTrax website's music playlist">
+                <img class="project_img" src="Images/MakinTraxScreenshot.webp" alt="Screenshot of the MakinTrax website's music playlist">
                 <div class="card_content_wrapper">
                     <a href="https://www.makin-trax.co.uk/" target="_blank">See for yourself! &#10140</a>
                     <hr class="hr">
                     <h3>About MakingTrax</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Nathan took up this project when the client - his father, and CEO of Makin' Trax, an established music library - asked to help him with his site.</p>
+                    <p>There were a few issues to be resolved:
+                        <ol>
+                            <li>The main UI was an image map which meant any additional pages to be added to the navigation bar required editing the background image used.
+                                Nathan copied the design as a simple WEBP image with HTML elements as buttons for accessibility, useability, and scalability.</li>
+                            <li>The playlist was not working correctly, as only some songs would play. Nathan found the error being mislabelled MP3's and set out a
+                                simple naming structure to adhere to for all future additions to the playlists.</li>
+                            <li>The client wanted a form for users of the site to be able to contact either himself or his partner, depending on the query. Nathan set about creating the form,
+                                learning PHP as he went so that the form would not accept injection or other malicious code. He also added a Google Authenticator for good measure.</li>
+                            <li>Lastly was minor tidying up of legacy HTML and adjusting some styles as per request.</li>
+                        </ol>
+                    </p>
+                    <p>His client was very happy with the work done, and Nathan has since taken over in looking after maintenance and future additions to the site.</p>
                 </div>
             </div>
         </div>

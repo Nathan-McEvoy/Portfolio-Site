@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="The Portfolio Showcase of Nathan McEvoy, started for his Accessibility and Useability module assignment whilst studying year 2 of his BSc Computer Science degree at the University of Hertfordshire">
+    <title>Nathan McEvoy's display of Portfolio Projects</title>
+    <!--Favicon-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!--Top Bar: Centred Title-->
+    <h1>Portfolio Project Display</h1>
+
+    <!--Floating Sticky Nav Bar-->
+    <nav>
+        <div class="nav_buttons_wrapper">
+            <button title="Go To Home" onclick="location.href='index.html'">Home</button>
+            <button title="Go To Projects" onclick="location.href='projects.html'">Projects</button>
+        </div>
+    </nav>
+
+    <main>
+        <!--Portfolio: Static top 3 projects with popup info of and links to each page-->
+        <div class="page_card">
+            <div class="page_card_section">
+                <h2>Portfolio</h2>
+                <div class="portfolio_cards_wrapper">
+
+                    <!-- HIDDEN POPOUT WINDOWS -->
+                    <div class="popout_dark_bg" id="popout_dark_bg"></div>
+                    <div class="popout_wrapper" id="popout_project_1">
+                        <button type="button" class="close_popout" id="c_p_1" title="Close Popout">&#9747</button>
+                        <iframe class="portfolio_popout" id="Project_1_Popout" title="Project 1 - MakinTrax" width="800" height="800"
+                            src="project_1_MakinTrax.html">
+                        </iframe>
+                        <button type="button" class="goto popout_portfolio_button" id="home_portfolio_goto_1" title="Goto"
+                            onclick="location.href='project_1_MakinTrax.html'">&#10140 Goto</button>
+                    </div>
+                    
+                    <div class="popout_wrapper" id="popout_project_2">
+                        <button type="button" class="close_popout" id="c_p_2" title="Close Popout">&#9747</button>
+                        <iframe class="portfolio_popout" id="Project_2_Popout" title="Project 2 - MakinTrax" width="800" height="800"
+                            src="project_2.html">
+                        </iframe>
+                        <button type="button" class="goto popout_portfolio_button" id="home_portfolio_goto_2" title="Goto"
+                            onclick="location.href='project_2.html'">&#10140 Goto</button>
+                    </div>
+                    
+                    <div class="popout_wrapper" id="popout_project_3">
+                        <button type="button" class="close_popout" id="c_p_3" title="Close Popout">&#9747</button>
+                        <iframe class="portfolio_popout" id="Project_3_Popout" title="Project 3 - MakinTrax" width="800" height="800"
+                            src="project_3.html">
+                        </iframe>
+                        <button type="button" class="goto popout_portfolio_button" id="home_portfolio_goto_3" title="Goto"
+                            onclick="location.href='project_3.html'">&#10140 Goto</button>
+                    </div>
+
+                    <!-- Portfolio Cards -->
+                    <div class="portfolio_card">
+                        <h3>Project 1: MakinTrax</h3>
+                        <img src="Images/MakinTraxScreenshot.webp" alt="Screenshot of the MakinTrax website's music playlist">
+                        <div class="portfolio_card_buttons_wrapper">
+                            <button type="button" class="expand index_portfolio_button" id="home_portfolio_expand_1"
+                                title="Expand 1st Portfolio Card">&#9857 Expand</button>
+                            <button type="button" class="goto index_portfolio_button" id="home_portfolio_goto_1" title="Goto"
+                                onclick="location.href='project_1_MakinTrax.html'">&#10140 Goto</button>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio_card">
+                        <h3>Project 2: TBD</h3>
+                        <img src="Images/placeholder-image.webp"
+                            alt="The image of the second portfolio project that I will soon add once it has been decided">
+                        <div class="portfolio_card_buttons_wrapper">
+                            <button type="button" class="expand index_portfolio_button" id="home_portfolio_expand_2"
+                                title="Expand 2nd Portfolio Card">&#9857 Expand</button>
+                            <button type="button" class="goto index_portfolio_button" id="home_portfolio_goto_2" title="Goto"
+                                onclick="location.href='project_2.html'">&#10140 Goto</button>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio_card">
+                        <h3>Project 3: TBD</h3>
+                        <img src="Images/placeholder-image.webp" alt="An Image of my 3rd portfolio project that is yet to be decided">
+                        <div class="portfolio_card_buttons_wrapper">
+                            <button type="button" class="expand index_portfolio_button" id="home_portfolio_expand_3"
+                                title="Expand 3rd Portfolio Card">&#9857 Expand</button>
+                            <button type="button" class="goto index_portfolio_button" id="home_portfolio_goto_3" title="Goto"
+                                onclick="location.href='project_3.html'">&#10140 Goto</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+    </main>
+
+
+
+    <!--Footer-->
+    <!--Scripts-->
+    <script src="Scripts/popout.js"></script>
+</body>
+
+</html>
