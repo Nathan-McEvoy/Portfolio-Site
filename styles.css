@@ -139,6 +139,12 @@ button:active:focus {
     display: flex;
 }
 
+/* ** Individual Projects Section ** */
+.project_img {
+    width: 60%;
+    margin: 0 auto;
+}
+
 
 
 /* *** ID's *** */
