@@ -51,7 +51,7 @@ nav a {
     font-size: 1.5em;
 }
 
-ol {
+ol, p {
     line-height: 1.6em;
 }
 
